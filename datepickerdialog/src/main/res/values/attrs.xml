@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DatePicker">
+        <attr name="yearRange" format="integer"/>
+        <attr name="minYear" format="integer" />
+        <attr name="maxYear" format="integer" />
+        <attr name="selectedYear" format="integer" />
+        <attr name="selectedMonth" format="integer" />
+        <attr name="selectedDay" format="integer" />
+        <attr name="displayMonthNames" format="boolean" />
+        <attr name="calendarType" format="enum">
+            <enum name="jalali" value="0"/>
+            <enum name="gregorian" value="1"/>
+        </attr>
+    </declare-styleable>
+    <attr name="numberPickerTheme" format="reference"/>
+</resources>

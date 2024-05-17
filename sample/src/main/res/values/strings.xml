@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DatePickerDialogSample</string>
+    <string name="choose_calendar_type">Choose Calendar Type</string>
+    <string name="jalali">Jalali</string>
+    <string name="gregorian">Gregorian</string>
+
+    <string name="show_as_dialog">Show as dialog</string>
+    <string name="show_as_bottom_sheet">Show as bottomSheet</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+</resources>

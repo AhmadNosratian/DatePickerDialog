@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.ahmadno.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_calendar_type"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_btn_calendar_type"
+        android:layout_width="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:layout_constraintTop_toBottomOf="@id/txtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/btn_jalali"
+            android:layout_width="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/jalali"
+            />
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/btn_gregorian"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gregorian"
+            />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <Button
+        android:id="@+id/btn_show_as_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_as_dialog"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggle_btn_calendar_type" />
+
+    <Button
+        android:id="@+id/btn_show_as_bottom_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_as_bottom_sheet"
+        android:layout_marginTop="8dp"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_show_as_dialog"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
