@@ -1,6 +1,14 @@
-# Date Picker Dialog Gregorian/Jalai
+# Date Picker Dialog Gregorian/Jalali
+[![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+<br/>
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 
 A customizable date picker dialog for Android that supports both Gregorian and Jalali calendars. Users can easily select dates using either a dialog or a bottom sheet. The library is designed to be simple to use and integrate into your existing projects.
+
+| Gregorian | Jalali |
+|:----:|:----:|
+<img alt="Gregorian" height="790" src="https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/gregorian_type.png" width="400"/> | <img alt="Jalali" height="790" src="https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/jalali_type.png" width="400"/>
 
 ### Features
 * Dual Calendar Support: Pick dates using either the Gregorian or Jalali calendar.
@@ -11,30 +19,30 @@ A customizable date picker dialog for Android that supports both Gregorian and J
 You use it in your project like below.
 ```kotlin
  DatePickerDialog.Builder(this) // context
-                .setCalendarType(calendarType)
-                .setMaxYear(DatePickerDialog.THIS_YEAR)
-                .setMaxMonth(DatePickerDialog.THIS_MONTH)
-                .setMaxDay(DatePickerDialog.THIS_DAY)
-                .setPositiveButtonString(R.string.ok)
-                .setNegativeButtonString(R.string.cancel)
-                .setCancelable(false)
-                .setShowInBottomSheet(true)
-                .setListener(object : DatePickerListener {
-                    override fun onDateSelected(datePicker: IDatePicker) {
-                        Log.d(TAG, "onDateSelected: " + datePicker.getTimeStamp())
-                        Log.d(TAG, "onDateSelected: " + datePicker.getGregorianDate())
-                        Log.d(TAG, "onDateSelected: " + datePicker.getJalaliLongDate())
-                        Log.d(TAG, "onDateSelected: " + datePicker.getJalaliMonthName())
+    .setCalendarType(calendarType)
+    .setMaxYear(DatePickerDialog.THIS_YEAR)
+    .setMaxMonth(DatePickerDialog.THIS_MONTH)
+    .setMaxDay(DatePickerDialog.THIS_DAY)
+    .setPositiveButtonString(R.string.ok)
+    .setNegativeButtonString(R.string.cancel)
+    .setCancelable(false)
+    .setShowInBottomSheet(true)
+    .setListener(object : DatePickerListener {
+        override fun onDateSelected(datePicker: IDatePicker) {
+            Log.d(TAG, "onDateSelected: " + datePicker.getTimeStamp())
+            Log.d(TAG, "onDateSelected: " + datePicker.getGregorianDate())
+            Log.d(TAG, "onDateSelected: " + datePicker.getJalaliLongDate())
+            Log.d(TAG, "onDateSelected: " + datePicker.getJalaliMonthName())
 
-                        Toast.makeText(this@MainActivity, "${datePicker.getJalaliYear()}/${datePicker.getJalaliMonth()}/${datePicker.getJalaliDay()} ", Toast.LENGTH_SHORT).show()
-                    }
+            Toast.makeText(this@MainActivity, "${datePicker.getJalaliYear()}/${datePicker.getJalaliMonth()}/${datePicker.getJalaliDay()} ", Toast.LENGTH_SHORT).show()
+        }
 
-                    override fun onDismiss() {
-                        Toast.makeText(this@MainActivity, "dismissed", Toast.LENGTH_SHORT).show()
-                    }
+        override fun onDismiss() {
+            Toast.makeText(this@MainActivity, "dismissed", Toast.LENGTH_SHORT).show()
+        }
 
-                })
-                .build().show()
+    })
+    .build().show()
 ```
 
 
@@ -63,3 +71,6 @@ you can theme the pickers by overwriting the color resources `mdtp_accent_color`
 <color name="mdtp_accent_color">#009688</color>
 <color name="mdtp_accent_color_dark">#00796b</color>
 ```
+
+### Credits
+This library is completely based on [Persian Date Picker Dialog](https://github.com/aliab/Persian-Date-Picker-Dialog).
