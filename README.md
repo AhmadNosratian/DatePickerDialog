@@ -15,30 +15,30 @@ A customizable date picker dialog for Android that supports both Gregorian and J
 You use it in your project like below.
 ```kotlin
  DatePickerDialog.Builder(this) // context
-                .setCalendarType(calendarType)
-                .setMaxYear(DatePickerDialog.THIS_YEAR)
-                .setMaxMonth(DatePickerDialog.THIS_MONTH)
-                .setMaxDay(DatePickerDialog.THIS_DAY)
-                .setPositiveButtonString(R.string.ok)
-                .setNegativeButtonString(R.string.cancel)
-                .setCancelable(false)
-                .setShowInBottomSheet(true)
-                .setListener(object : DatePickerListener {
-                    override fun onDateSelected(datePicker: IDatePicker) {
-                        Log.d(TAG, "onDateSelected: " + datePicker.getTimeStamp())
-                        Log.d(TAG, "onDateSelected: " + datePicker.getGregorianDate())
-                        Log.d(TAG, "onDateSelected: " + datePicker.getJalaliLongDate())
-                        Log.d(TAG, "onDateSelected: " + datePicker.getJalaliMonthName())
+    .setCalendarType(calendarType)
+    .setMaxYear(DatePickerDialog.THIS_YEAR)
+    .setMaxMonth(DatePickerDialog.THIS_MONTH)
+    .setMaxDay(DatePickerDialog.THIS_DAY)
+    .setPositiveButtonString(R.string.ok)
+    .setNegativeButtonString(R.string.cancel)
+    .setCancelable(false)
+    .setShowInBottomSheet(true)
+    .setListener(object : DatePickerListener {
+        override fun onDateSelected(datePicker: IDatePicker) {
+            Log.d(TAG, "onDateSelected: " + datePicker.getTimeStamp())
+            Log.d(TAG, "onDateSelected: " + datePicker.getGregorianDate())
+            Log.d(TAG, "onDateSelected: " + datePicker.getJalaliLongDate())
+            Log.d(TAG, "onDateSelected: " + datePicker.getJalaliMonthName())
 
-                        Toast.makeText(this@MainActivity, "${datePicker.getJalaliYear()}/${datePicker.getJalaliMonth()}/${datePicker.getJalaliDay()} ", Toast.LENGTH_SHORT).show()
-                    }
+            Toast.makeText(this@MainActivity, "${datePicker.getJalaliYear()}/${datePicker.getJalaliMonth()}/${datePicker.getJalaliDay()} ", Toast.LENGTH_SHORT).show()
+        }
 
-                    override fun onDismiss() {
-                        Toast.makeText(this@MainActivity, "dismissed", Toast.LENGTH_SHORT).show()
-                    }
+        override fun onDismiss() {
+            Toast.makeText(this@MainActivity, "dismissed", Toast.LENGTH_SHORT).show()
+        }
 
-                })
-                .build().show()
+    })
+    .build().show()
 ```
 
 
