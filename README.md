@@ -1,6 +1,10 @@
-# Date Picker Dialog Gregorian/Jalai
+# Date Picker Dialog Gregorian/Jalali
 
 A customizable date picker dialog for Android that supports both Gregorian and Jalali calendars. Users can easily select dates using either a dialog or a bottom sheet. The library is designed to be simple to use and integrate into your existing projects.
+
+| Gregorian | Jalali |
+|:----:|:----:|
+![Gregorian](https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/gregorian_type.png) | ![Jalali](https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/jalali_type.png)
 
 ### Features
 * Dual Calendar Support: Pick dates using either the Gregorian or Jalali calendar.
