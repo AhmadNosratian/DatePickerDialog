@@ -67,3 +67,6 @@ you can theme the pickers by overwriting the color resources `mdtp_accent_color`
 <color name="mdtp_accent_color">#009688</color>
 <color name="mdtp_accent_color_dark">#00796b</color>
 ```
+
+### Credits
+This library is completely based on [Persian Date Picker Dialog](https://github.com/aliab/Persian-Date-Picker-Dialog).
