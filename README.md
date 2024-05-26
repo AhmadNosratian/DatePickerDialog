@@ -1,4 +1,8 @@
 # Date Picker Dialog Gregorian/Jalali
+[![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+<br/>
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 
 A customizable date picker dialog for Android that supports both Gregorian and Jalali calendars. Users can easily select dates using either a dialog or a bottom sheet. The library is designed to be simple to use and integrate into your existing projects.
 
