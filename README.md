@@ -8,7 +8,7 @@ A customizable date picker dialog for Android that supports both Gregorian and J
 
 | Gregorian | Jalali |
 |:----:|:----:|
-![Gregorian](https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/gregorian_type.png) | ![Jalali](https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/jalali_type.png)
+<img alt="Gregorian" height="790" src="https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/gregorian_type.png" width="400"/> | <img alt="Jalali" height="790" src="https://raw.githubusercontent.com/AhmadNosratian/DatePickerDialog/main/screenshots/jalali_type.png" width="400"/>
 
 ### Features
 * Dual Calendar Support: Pick dates using either the Gregorian or Jalali calendar.
